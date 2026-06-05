@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Lang Ultimate Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="stylesheet" href="assets/components.css">
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#faf8f3">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#faf8f3"/>
+    <rect x="500" y="250" width="200" height="200" rx="44" fill="#21364f"/>
+    <text x="600" y="385" font-family="Georgia, serif" font-size="104" font-weight="600" fill="#faf8f3" text-anchor="middle">AP</text>
+    <rect x="430" y="500" width="340" height="14" rx="7" fill="#cf8526"/>
+    <rect x="470" y="540" width="260" height="10" rx="5" fill="#e4ddcd"/>
+  </svg>
+</template>
+
+<div id="progress"></div>
+
+<nav id="nav">
+  <div class="brand" data-scrollto="hero">
+    <span class="mark"><span>AP</span></span>
+    <span>Lang Ultimate Guide</span>
+  </div>
+  <div class="nav-links">
+    <a href="#exam" data-nav>Exam</a>
+    <a href="#rubric" data-nav>Rubric</a>
+    <a href="#rhetoric" data-nav>Rhetoric</a>
+    <a href="#synthesis" data-nav>Synthesis</a>
+    <a href="#argument" data-nav>Argument</a>
+    <a href="#mistakes" data-nav>Mistakes</a>
+    <a href="#templates" data-nav>Templates</a>
+    <a href="#time" data-nav>Timing</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero" data-screen-label="Hero">
+  <div class="hero-bg-orb orb-a"></div>
+  <div class="hero-bg-orb orb-b"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="kicker hero-eyebrow" data-reveal="fade">Built by students, for students</div>
+      <h1 data-reveal>Your guide to<br>crushing <span class="em">AP&nbsp;Lang</span>.</h1>
+      <p class="hero-sub" data-reveal style="--d:120ms">Rhetorical Analysis. Synthesis. Argument. <b>No fluff. Just what actually works.</b></p>
+      <p class="hero-tagline" data-reveal style="--d:200ms">// three essays · one exam · zero guesswork</p>
+      <div class="hero-cta" data-reveal style="--d:280ms">
+        <a href="#exam" class="btn btn-primary" data-nav>Start the walkthrough <span class="arr">→</span></a>
+        <a href="#templates" class="btn btn-ghost" data-nav>Jump to templates</a>
+      </div>
+      <div class="hero-intro" data-reveal style="--d:360ms">
+        <p>AP Lang isn't about memorizing random terms. It's about <b>reading closely, thinking clearly, arguing well, and explaining your reasoning</b> so a stranger can follow it. This guide breaks down exactly how — strategy by strategy, example by example.</p>
+      </div>
+    </div>
+
+    <div class="hero-art" data-reveal="scale" style="--d:200ms">
+      <div class="exam-paper floaty" style="--dur:8s">
+        <div class="ep-head">
+          <span class="ep-title">Free Response</span>
+          <span class="ep-grade">6</span>
+        </div>
+        <div class="exam-line mid"></div>
+        <div class="exam-line"></div>
+        <div class="exam-line short"></div>
+        <div class="exam-line mid"></div>
+        <div class="exam-line"></div>
+        <div class="exam-line short"></div>
+        <span class="exam-mark" style="top:84px; right:-26px; --r:6deg;">thesis ✓</span>
+        <span class="exam-mark" style="bottom:30px; left:-30px;">commentary ✓</span>
+      </div>
+      <div class="float-chip fc1 floaty" style="--dur:6.5s"><span class="dot"></span> Ethos</div>
+      <div class="float-chip fc2 floaty" style="--dur:7.5s"><span class="dot"></span> Juxtaposition</div>
+      <div class="float-chip fc3 floaty" style="--dur:6.8s"><span class="dot"></span> Anecdote</div>
+      <div class="float-chip fc4 floaty" style="--dur:8.2s"><span class="dot"></span> Tone shift</div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" data-reveal="fade" style="--d:600ms">
+    <span>Scroll</span>
+    <span class="mouse"></span>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUEST MAP — three essay types
+     ============================================================ -->
+<section class="section-pad" id="map" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="sec-head centered" data-reveal>
+      <span class="kicker centered">The three essays</span>
+      <h2>One exam. Three very different jobs.</h2>
+      <p class="lead">Every free-response question asks for a different kind of thinking. Know which is which before you write a word.</p>
+    </div>
+    <div class="quest-map" data-reveal="fade">
+      <div class="quest-node">
+        <div class="quest-num floaty" style="--dur:7s">1</div>
+        <h4>Synthesis</h4>
+        <p>Build one argument using a stack of provided sources as your support.</p>
+      </div>
+      <div class="quest-node">
+        <div class="quest-num floaty" style="--dur:7.6s">2</div>
+        <h4>Rhetorical Analysis</h4>
+        <p>Explain <em>how</em> a writer's choices help them achieve their purpose.</p>
+      </div>
+      <div class="quest-node">
+        <div class="quest-num floaty" style="--dur:8.2s">3</div>
+        <h4>Argument</h4>
+        <p>Take your own position and defend it with evidence you choose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXAM OVERVIEW
+     ============================================================ -->
+<section class="section-pad" id="exam" data-screen-label="Exam Overview">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">The format</span>
+      <h2>What the exam actually looks like</h2>
+      <p class="lead">Two sittings, one score. Knowing the shape of the test is the cheapest way to buy yourself confidence on the day.</p>
+    </div>
+
+    <div class="exam-cards">
+      <div class="exam-card" data-reveal="left">
+        <span class="tag ec-tag">Section I</span>
+        <h3>Multiple Choice</h3>
+        <div class="ec-meta">
+          <div class="ec-stat"><div class="n">45</div><div class="l">questions</div></div>
+          <div class="ec-stat"><div class="n">1<span style="font-size:18px">hr</span></div><div class="l">to finish</div></div>
+          <div class="ec-stat"><div class="n">45<span style="font-size:18px">%</span></div><div class="l">of score</div></div>
+        </div>
+        <p>Tests <b>close reading</b> — your ability to track rhetoric, argument, and evidence in passages you've never seen, plus questions on revising writing.</p>
+      </div>
+
+      <div class="exam-card" data-reveal="right">
+        <span class="tag ec-tag">Section II</span>
+        <h3>Free Response — 3 Essays</h3>
+        <div class="ec-meta">
+          <div class="ec-stat"><div class="n">2<span style="font-size:18px">hr</span> 15</div><div class="l">total (incl. 15-min reading)</div></div>
+          <div class="ec-stat"><div class="n">55<span style="font-size:18px">%</span></div><div class="l">of score</div></div>
+        </div>
+        <div class="frq-list">
+          <div class="frq-row"><span class="frq-q">Q1</span><div><div class="frq-name">Synthesis</div><div class="frq-desc">Argue using 6–7 provided sources</div></div></div>
+          <div class="frq-row"><span class="frq-q">Q2</span><div><div class="frq-name">Rhetorical Analysis</div><div class="frq-desc">Analyze how a text achieves its purpose</div></div></div>
+          <div class="frq-row"><span class="frq-q">Q3</span><div><div class="frq-name">Argument</div><div class="frq-desc">Defend your own position with your own evidence</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-wrap" data-reveal="fade">
+      <div class="timeline-title">
+        <span>How to spend the 2hr 15min on free response</span>
+        <span>start → finish</span>
+      </div>
+      <div class="timeline" data-timeline>
+        <div class="tl-fill"></div>
+        <div class="tl-seg" style="--f:15; --dd:200ms"><span class="tl-time">15 min</span><span class="tl-label">Read all sources & prompts</span><span class="tl-bar"></span></div>
+        <div class="tl-seg" style="--f:40; --dd:450ms"><span class="tl-time">40 min</span><span class="tl-label">Q1 · Synthesis</span><span class="tl-bar"></span></div>
+        <div class="tl-seg" style="--f:40; --dd:700ms"><span class="tl-time">40 min</span><span class="tl-label">Q2 · Rhetorical Analysis</span><span class="tl-bar"></span></div>
+        <div class="tl-seg" style="--f:40; --dd:950ms"><span class="tl-time">40 min</span><span class="tl-label">Q3 · Argument</span><span class="tl-bar"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RUBRIC
+     ============================================================ -->
+<section class="section-pad" id="rubric" data-screen-label="Rubric" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">The 6-point rubric</span>
+      <h2>Where the points actually live</h2>
+      <p class="lead">Every FRQ is scored out of 6 on the same three rows. Notice the imbalance — <strong>evidence &amp; commentary is worth four times what your thesis is.</strong> Spend your time accordingly.</p>
+    </div>
+
+    <div class="meters">
+      <div class="meter-card" data-meter data-reveal style="--circ:352; --target:293;">
+        <div class="meter-ring">
+          <svg viewBox="0 0 132 132"><circle class="track" cx="66" cy="66" r="56"></circle><circle class="bar" cx="66" cy="66" r="56"></circle></svg>
+          <div class="center"><span class="pts">1</span><span class="of">of 6 pts</span></div>
+        </div>
+        <h3>Thesis</h3>
+        <p>One defensible claim that answers the prompt. Easy to earn — don't fumble it.</p>
+      </div>
+      <div class="meter-card" data-meter data-reveal style="--circ:352; --target:117; --d:140ms;">
+        <div class="meter-ring">
+          <svg viewBox="0 0 132 132"><circle class="track" cx="66" cy="66" r="56"></circle><circle class="bar" cx="66" cy="66" r="56"></circle></svg>
+          <div class="center"><span class="pts">4</span><span class="of">of 6 pts</span></div>
+        </div>
+        <h3>Evidence &amp; Commentary</h3>
+        <p>The whole ballgame. Specific evidence plus reasoning that explains <em>why</em> it proves your claim.</p>
+      </div>
+      <div class="meter-card" data-meter data-reveal style="--circ:352; --target:293; --d:280ms;">
+        <div class="meter-ring">
+          <svg viewBox="0 0 132 132"><circle class="track" cx="66" cy="66" r="56"></circle><circle class="bar" cx="66" cy="66" r="56"></circle></svg>
+          <div class="center"><span class="pts">1</span><span class="of">of 6 pts</span></div>
+        </div>
+        <h3>Sophistication</h3>
+        <p>The bonus point for genuine complexity — not for big vocabulary.</p>
+      </div>
+    </div>
+
+    <p class="kicker" data-reveal style="margin-bottom:18px;">Tap a card to see what graders look for</p>
+    <div class="rubric-flips">
+      <div class="flip" data-flip data-reveal>
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="fnum">ROW A</span>
+            <h3>Thesis</h3>
+            <span class="fpts">1 point</span>
+            <span class="flip-hint"><span class="ic">↻</span> What earns it</span>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>To earn the point</h4>
+            <ul>
+              <li>Must be <b>defensible</b> — a reasonable person could disagree</li>
+              <li>Must <b>answer the prompt</b>, not dodge it</li>
+              <li>Cannot just <b>restate the prompt</b> back</li>
+              <li>One or two sentences is plenty</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" data-flip data-reveal style="--d:120ms">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="fnum">ROW B</span>
+            <h3>Evidence &amp; Commentary</h3>
+            <span class="fpts">4 points</span>
+            <span class="flip-hint"><span class="ic">↻</span> What earns it</span>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>To climb the rows</h4>
+            <ul>
+              <li>Evidence must be <b>specific</b>, not vague gestures</li>
+              <li>Commentary explains <b>why it proves the claim</b></li>
+              <li>Summary alone <b>does not score</b> highly</li>
+              <li>A clear <b>line of reasoning</b> ties it together</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" data-flip data-reveal style="--d:240ms">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="fnum">ROW C</span>
+            <h3>Sophistication</h3>
+            <span class="fpts">1 point</span>
+            <span class="flip-hint"><span class="ic">↻</span> What earns it</span>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>To earn the point</h4>
+            <ul>
+              <li>Shows <b>complexity</b> — tension, nuance, or stakes</li>
+              <li>Handles a <b>counterargument</b> fairly</li>
+              <li>Connects ideas to a <b>broader situation</b></li>
+              <li>Does <b>not</b> come from fancy words alone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare">
+      <div class="compare-card weak" data-reveal="left">
+        <span class="compare-badge">✕ Weak thesis</span>
+        <p class="compare-quote">"There are many reasons social media is both good and bad for teenagers."</p>
+        <p class="compare-why">Restates the prompt, picks no side, and promises a list. <b>A grader can't tell what you'll argue.</b></p>
+      </div>
+      <div class="compare-card strong" data-reveal="right">
+        <span class="compare-badge">✓ Strong thesis</span>
+        <p class="compare-quote">"Because it rewards outrage over accuracy, social media harms teens less by wasting time than by reshaping what they believe is true."</p>
+        <p class="compare-why">Defensible, specific, and shows a line of reasoning. <b>The whole essay now has a job to do.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RHETORICAL ANALYSIS
+     ============================================================ -->
+<section class="section-pad" id="rhetoric" data-screen-label="Rhetorical Analysis">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">FRQ 2 · Rhetorical Analysis</span>
+      <h2>Stop listing devices. Start explaining choices.</h2>
+      <p class="lead">Rhetorical analysis is <strong>not</strong> a scavenger hunt for metaphors. It's explaining <strong>how a writer's choices help them achieve their purpose with a specific audience.</strong></p>
+    </div>
+
+    <p class="kicker" data-reveal style="margin-bottom:18px;">First, map the rhetorical situation</p>
+    <div class="situation">
+      <div class="sit-card" data-reveal><div class="sit-letter">S</div><h4>Speaker</h4><p>Who is talking, and what's their credibility or stake?</p></div>
+      <div class="sit-card" data-reveal style="--d:90ms"><div class="sit-letter">A</div><h4>Audience</h4><p>Who are they actually trying to reach?</p></div>
+      <div class="sit-card" data-reveal style="--d:180ms"><div class="sit-letter">P</div><h4>Purpose</h4><p>What do they want that audience to think, feel, or do?</p></div>
+      <div class="sit-card" data-reveal style="--d:270ms"><div class="sit-letter">C</div><h4>Context</h4><p>What moment or pressure makes this matter now?</p></div>
+      <div class="sit-card" data-reveal style="--d:360ms"><div class="sit-letter">M</div><h4>Message</h4><p>What is the core claim underneath the style?</p></div>
+    </div>
+
+    <div class="ask-box" data-reveal="scale">
+      <h3>The four questions to ask every passage</h3>
+      <ul class="ask-list">
+        <li>Who is speaking, and why should we listen to them?</li>
+        <li>Who are they speaking to?</li>
+        <li>What do they want the audience to think, feel, or do?</li>
+        <li>What choices do they make to achieve that purpose?</li>
+      </ul>
+    </div>
+
+    <div class="sec-head" data-reveal style="margin-bottom:28px;">
+      <h2 style="font-size:clamp(26px,3.4vw,36px);">Choices worth analyzing</h2>
+      <p class="lead" style="margin-top:14px;font-size:18px;">These are tools, not vocabulary words. Hover to see them lift off the page — then ask what each one <em>does</em> to the reader.</p>
+    </div>
+    <div class="choices">
+      <div class="choice" data-reveal><div class="choice-ic">⇄</div><div class="choice-name">Contrast</div></div>
+      <div class="choice" data-reveal style="--d:60ms"><div class="choice-ic">≡</div><div class="choice-name">Repetition</div></div>
+      <div class="choice" data-reveal style="--d:120ms"><div class="choice-ic">❝</div><div class="choice-name">Anecdote</div></div>
+      <div class="choice" data-reveal style="--d:180ms"><div class="choice-ic">★</div><div class="choice-name">Appeals to authority</div></div>
+      <div class="choice" data-reveal style="--d:240ms"><div class="choice-ic">♥</div><div class="choice-name">Emotional appeals</div></div>
+      <div class="choice" data-reveal style="--d:60ms"><div class="choice-ic">Aa</div><div class="choice-name">Diction</div></div>
+      <div class="choice" data-reveal style="--d:120ms"><div class="choice-ic">§</div><div class="choice-name">Syntax</div></div>
+      <div class="choice" data-reveal style="--d:180ms"><div class="choice-ic">⌗</div><div class="choice-name">Organization</div></div>
+      <div class="choice" data-reveal style="--d:240ms"><div class="choice-ic">↗</div><div class="choice-name">Tone shifts</div></div>
+      <div class="choice" data-reveal style="--d:300ms"><div class="choice-ic">◐</div><div class="choice-name">Imagery</div></div>
+    </div>
+
+    <div class="warn-note" data-reveal="fade">
+      <span class="wn-ic">!</span>
+      <p>Never write <s>"The author uses diction."</s> That earns nothing. Instead: <b>name the kind of diction and explain why it matters</b> — "The author's clinical, almost medical diction strips emotion from the disaster, forcing readers to confront it as a solvable problem rather than a tragedy to mourn."</p>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:80px;">
+    <div class="sec-head" data-reveal style="margin-bottom:24px;">
+      <span class="kicker">The move that scores</span>
+      <h2 style="font-size:clamp(26px,3.4vw,38px);">Choice → Effect → Purpose</h2>
+    </div>
+    <div class="formula" data-reveal="fade">
+      <div class="f-step"><span class="f-n">STEP 01</span><h4>Name the choice</h4><p>Be specific. What exactly did the writer do?</p><span class="f-arrow">→</span></div>
+      <div class="f-step"><span class="f-n">STEP 02</span><h4>Effect on audience</h4><p>What does it make the reader think or feel?</p><span class="f-arrow">→</span></div>
+      <div class="f-step"><span class="f-n">STEP 03</span><h4>Connect to purpose</h4><p>How does that effect advance the writer's goal?</p></div>
+    </div>
+    <div class="f-example" data-reveal="fade">
+      <div class="fe-label">One sentence, all three moves</div>
+      <p>The author uses <span class="hl-choice">personal anecdotes</span> <span class="hl-effect">to make the issue feel human and immediate,</span> <span class="hl-purpose">which helps the audience see the policy debate as a real-life problem rather than an abstract argument.</span></p>
+    </div>
+  </div>
+
+  <!-- Annotated sample essay -->
+  <div class="wrap" style="margin-top:88px;">
+    <div class="sec-head" data-reveal style="margin-bottom:28px;">
+      <span class="kicker">Full annotated example</span>
+      <h2 style="font-size:clamp(26px,3.6vw,40px);">See the rubric light up</h2>
+      <p class="lead" style="margin-top:14px;font-size:18px;">Scroll through a complete response. As each move passes, watch the matching callout activate on the right.</p>
+    </div>
+
+    <div class="essay" data-essay>
+      <div class="essay-doc">
+        <span class="prompt-tab">PROMPT · Analyze the rhetorical choices the writer makes to argue that public libraries deserve continued funding.</span>
+
+        <div class="essay-seg" data-seg="thesis" style="--seg-bg:#e6ecf3; --an-c:var(--navy);">
+          <p>Facing a city council ready to treat libraries as a budget line rather than a public good, the writer argues that libraries earn their funding not as relics but as engines of opportunity. <mark class="an">By moving from a single child's story to the scale of an entire community, and by shifting her tone from warm to unflinching, she reframes funding as a moral choice rather than a financial one.</mark></p>
+        </div>
+
+        <div class="essay-seg" data-seg="evidence" style="--seg-bg:#e4eef7; --an-c:#3a6ea5;">
+          <p>She opens with an <mark class="an">anecdote about a girl who learned to read at a branch library that "smelled like rain and old paper."</mark> The detail is small and sensory, and that is precisely the point.</p>
+        </div>
+
+        <div class="essay-seg" data-seg="commentary" style="--seg-bg:var(--amber-soft); --an-c:var(--amber);">
+          <p><mark class="an">By grounding an abstract budget question in one specific child, the writer makes the stakes impossible to dismiss as statistics; the reader who pictures that girl cannot easily vote to close her library.</mark> The anecdote does the quiet work of turning policy into a person.</p>
+        </div>
+
+        <div class="essay-seg" data-seg="evidence" style="--seg-bg:#e4eef7; --an-c:#3a6ea5;">
+          <p>Midway through, her tone hardens. <mark class="an">She drops the warm imagery and lists, in flat parallel clauses, what disappears when a library closes: "no printer for the job application, no warm room in January, no one to ask."</mark></p>
+        </div>
+
+        <div class="essay-seg" data-seg="commentary" style="--seg-bg:var(--amber-soft); --an-c:var(--amber);">
+          <p><mark class="an">The shift from sentiment to blunt inventory mirrors her argument: nostalgia alone won't save the library, so she forces the council to see the concrete services real people lose.</mark> The parallel syntax makes each loss land like a separate blow, and the plainness of the language refuses the reader any comfortable distance.</p>
+        </div>
+
+        <div class="essay-seg" data-seg="soph" style="--seg-bg:var(--strong-bg); --an-c:var(--strong);">
+          <p><mark class="an">What makes the passage persuasive is not that it chooses emotion over logic, but that it refuses to separate them: the girl and the job application are the same argument, viewed up close and from a distance.</mark> In doing so the writer answers the council's likely objection — that feelings are a luxury budgets can't afford — by showing that the feeling <em>is</em> the data.</p>
+        </div>
+      </div>
+
+      <div class="essay-notes">
+        <div class="note" data-note="thesis" style="--nc:var(--navy);">
+          <div class="note-k"><span class="swatch"></span> Thesis · 1 pt</div>
+          <h4>Defensible &amp; specific</h4>
+          <p>Names the purpose and previews the choices — "reframes funding as a moral choice." A grader knows exactly what's coming.</p>
+        </div>
+        <div class="note" data-note="evidence" style="--nc:#3a6ea5;">
+          <div class="note-k"><span class="swatch"></span> Evidence</div>
+          <h4>Specific textual detail</h4>
+          <p>Quotes the actual language ("smelled like rain") instead of vaguely gesturing at "imagery."</p>
+        </div>
+        <div class="note" data-note="commentary" style="--nc:var(--amber);">
+          <div class="note-k"><span class="swatch"></span> Commentary</div>
+          <h4>Why it works</h4>
+          <p>Explains the <em>effect</em> on the reader and ties it back to purpose — the heart of the 4-point row.</p>
+        </div>
+        <div class="note" data-note="soph" style="--nc:var(--strong);">
+          <div class="note-k"><span class="swatch"></span> Sophistication · 1 pt</div>
+          <h4>Genuine complexity</h4>
+          <p>Handles tension (emotion vs. logic) and answers an objection — not fancy words, real nuance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SYNTHESIS
+     ============================================================ -->
+<section class="section-pad" id="synthesis" data-screen-label="Synthesis" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">FRQ 1 · Synthesis</span>
+      <h2>Your argument. Their sources.</h2>
+      <p class="lead">Synthesis is <strong>not</strong> a tour of the sources one by one. It's <strong>your own argument</strong>, with the sources brought in as support exactly where you need them.</p>
+    </div>
+
+    <div class="sort-stage">
+      <div class="sort-controls" data-reveal>
+        <p><b>Prompt:</b> Should schools adopt a four-day school week? Don't read these sources one at a time — <b>group them by idea.</b></p>
+        <button class="btn btn-primary" data-sort-btn>Group the sources <span class="arr">→</span></button>
+      </div>
+
+      <div class="sort-pool" data-sort-pool data-reveal="fade">
+        <div class="src-card" data-group="econ"><span class="src-id">Source A</span><span class="src-txt">Four-day districts cut busing and utility costs by up to 20%.</span></div>
+        <div class="src-card" data-group="ethic"><span class="src-id">Source B</span><span class="src-txt">Working parents scramble to find childcare on the day off.</span></div>
+        <div class="src-card" data-group="long"><span class="src-id">Source C</span><span class="src-txt">Five-year data shows no lasting change in test scores.</span></div>
+        <div class="src-card" data-group="counter"><span class="src-id">Source D</span><span class="src-txt">Critics say shorter weeks just shift learning onto longer days kids can't sustain.</span></div>
+        <div class="src-card" data-group="econ"><span class="src-id">Source E</span><span class="src-txt">One rural district redirected savings into higher teacher pay.</span></div>
+        <div class="src-card" data-group="ethic"><span class="src-id">Source F</span><span class="src-txt">Low-income students lose a guaranteed daily school meal.</span></div>
+        <div class="src-card" data-group="long"><span class="src-id">Source G</span><span class="src-txt">Attendance and teacher retention improved over three years.</span></div>
+        <div class="src-card" data-group="counter"><span class="src-id">Source H</span><span class="src-txt">Some parents say a fifth day's structure matters more than the hours.</span></div>
+      </div>
+
+      <div class="sort-groups">
+        <div class="group-col" data-group="econ" data-reveal><div class="gc-head"><span class="gc-dot"></span> Economic benefits</div><div class="gc-slot"></div></div>
+        <div class="group-col" data-group="ethic" data-reveal style="--d:90ms"><div class="gc-head"><span class="gc-dot"></span> Ethical concerns</div><div class="gc-slot"></div></div>
+        <div class="group-col" data-group="long" data-reveal style="--d:180ms"><div class="gc-head"><span class="gc-dot"></span> Long-term effects</div><div class="gc-slot"></div></div>
+        <div class="group-col" data-group="counter" data-reveal style="--d:270ms"><div class="gc-head"><span class="gc-dot"></span> Counterargument</div><div class="gc-slot"></div></div>
+      </div>
+    </div>
+
+    <div class="warn-note" data-reveal="fade" style="margin-top:40px;">
+      <span class="wn-ic">✓</span>
+      <p>Now each <b>body paragraph is built around an idea</b>, pulling from whichever sources fit — not "Source A says… Source B says…". That single move is the difference between a 3 and a 6.</p>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:80px;">
+    <div class="sec-head" data-reveal style="margin-bottom:8px;">
+      <span class="kicker">The strategy, in order</span>
+      <h2 style="font-size:clamp(26px,3.6vw,40px);">Five steps before you write</h2>
+    </div>
+    <div class="strategy" data-reveal="fade">
+      <div class="strat-step"><div class="ss-body"><h4>Read the prompt first</h4><p>Decide what it's actually asking you to take a position on before a single source colors your thinking.</p></div></div>
+      <div class="strat-step"><div class="ss-body"><h4>Skim sources for positions</h4><p>You're hunting for stances, not summaries. Jot a one-word lean next to each.</p></div></div>
+      <div class="strat-step"><div class="ss-body"><h4>Group sources by idea</h4><p>Cluster them like you just did above. Your groups become your body paragraphs.</p></div></div>
+      <div class="strat-step"><div class="ss-body"><h4>Write your own thesis</h4><p>Commit to a position. The sources support <em>you</em> — you don't referee them.</p></div></div>
+      <div class="strat-step"><div class="ss-body"><h4>Use sources as support, never as the whole argument</h4><p>At least three sources, woven in where they earn their place. Cite, then explain in your own voice.</p></div></div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:72px;">
+    <div class="sec-head" data-reveal style="margin-bottom:8px;">
+      <span class="kicker">Citing like a pro</span>
+      <h2 style="font-size:clamp(26px,3.6vw,40px);">Three ways to bring a source in</h2>
+    </div>
+    <div class="citations">
+      <div class="cite-card" data-reveal><div class="cite-move">Introduce</div><p>"According to <span class="src-ref">Source A,</span> four-day weeks cut district transportation costs significantly."</p></div>
+      <div class="cite-card" data-reveal style="--d:120ms"><div class="cite-move">Use data</div><p>"The five-year data in <span class="src-ref">Source C</span> shows test scores holding steady."</p></div>
+      <div class="cite-card" data-reveal style="--d:240ms"><div class="cite-move">Complicate</div><p>"<span class="src-ref">Source F</span> complicates this optimism by showing which students lose a guaranteed meal."</p></div>
+    </div>
+  </div>
+
+  <!-- sample synthesis essay -->
+  <div class="wrap" style="margin-top:88px;">
+    <div class="sec-head" data-reveal style="margin-bottom:28px;">
+      <span class="kicker">Full example response</span>
+      <h2 style="font-size:clamp(26px,3.6vw,40px);">Watch the sources fly in</h2>
+      <p class="lead" style="margin-top:14px;font-size:18px;">A complete synthesis essay on the four-day week. As each paragraph appears, the source it leans on slides in beside it.</p>
+    </div>
+    <div class="essay-doc" data-fly-essay data-reveal="fade" style="max-width:900px;margin-inline:auto;">
+      <span class="prompt-tab">PROMPT · Should schools adopt a four-day school week? Develop your own position.</span>
+      <p class="fly-para"><b>Thesis.</b> A four-day school week is worth adopting — but only where districts treat the savings as a down payment on students, not a way to quietly do less. The structure can stretch tight budgets and lift morale, yet it risks abandoning the very students who most need a fifth day, so its value depends entirely on what a district does with the time and money it frees up.</p>
+      <p class="fly-para" data-fly="A · E"><b>Economic case.</b> The financial argument is real. Four-day districts cut busing and utility costs by up to a fifth <span class="src-ref">(Source A)</span>, and at least one rural district funneled those savings straight into higher teacher pay <span class="src-ref">(Source E)</span>. In places where a school is one bad budget cycle from cutting programs entirely, that flexibility isn't a luxury — it's survival.</p>
+      <p class="fly-para" data-fly="B · F"><b>The cost few mention.</b> But savings on a balance sheet can hide costs borne by families. Working parents are left scrambling for childcare on the day off <span class="src-ref">(Source B)</span>, and low-income students lose a guaranteed daily meal <span class="src-ref">(Source F)</span>. A policy that balances the district's books by shifting the burden onto its poorest families hasn't solved a problem; it has relocated it.</p>
+      <p class="fly-para" data-fly="G"><b>Qualification.</b> Long-term evidence keeps the question open: over three years, one district saw attendance and teacher retention actually improve <span class="src-ref">(Source G)</span>. That suggests the four-day week isn't inherently harmful — its outcomes track with whether a district reinvests in the people inside the building.</p>
+      <p class="fly-para"><b>So.</b> The four-day week is neither a gimmick nor a cure. It is a lever, and levers move in whatever direction you push them. Adopt it where the savings buy better teaching and protected services for vulnerable students; reject it where it's only a quieter way to spend less on children.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ARGUMENT
+     ============================================================ -->
+<section class="section-pad" id="argument" data-screen-label="Argument">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">FRQ 3 · Argument</span>
+      <h2>No sources. Just you and what you know.</h2>
+      <p class="lead">Argument asks you to build your own position using evidence from <strong>history, literature, current events, personal observation, or broader knowledge.</strong> The catch: your examples have to be specific and you have to explain them.</p>
+    </div>
+
+    <p class="kicker" data-reveal style="margin-bottom:18px;">Your evidence toolbox — stock it before exam day</p>
+    <div class="toolbox">
+      <div class="tool" data-reveal><div class="tool-glyph">⌛</div><h4>History</h4><p>Movements, turning points, decisions and their consequences.</p></div>
+      <div class="tool" data-reveal style="--d:70ms"><div class="tool-glyph">❧</div><h4>Literature</h4><p>Characters and conflicts that dramatize big ideas.</p></div>
+      <div class="tool" data-reveal style="--d:140ms"><div class="tool-glyph">◎</div><h4>Current events</h4><p>Recent, verifiable examples — not half-remembered headlines.</p></div>
+      <div class="tool" data-reveal style="--d:210ms"><div class="tool-glyph">✦</div><h4>Personal experience</h4><p>Used precisely, a real observation can carry a paragraph.</p></div>
+      <div class="tool" data-reveal style="--d:70ms"><div class="tool-glyph">⚛</div><h4>Science &amp; tech</h4><p>Discoveries, trade-offs, unintended effects.</p></div>
+      <div class="tool" data-reveal style="--d:140ms"><div class="tool-glyph">⚑</div><h4>Sports</h4><p>Teams, rivalries, and the logic of competition.</p></div>
+      <div class="tool" data-reveal style="--d:210ms"><div class="tool-glyph">$</div><h4>Business &amp; economics</h4><p>Companies, incentives, booms and busts.</p></div>
+      <div class="tool" data-reveal style="--d:280ms"><div class="tool-glyph">⌂</div><h4>School &amp; community</h4><p>What you've actually watched play out around you.</p></div>
+    </div>
+
+    <div class="compare" style="margin-top:64px;">
+      <div class="compare-card weak" data-reveal="left">
+        <span class="compare-badge">✕ Weak evidence</span>
+        <p class="compare-quote">"Many people work hard, so success is possible."</p>
+        <p class="compare-why">No one specific, no event, no reasoning. <b>It could be glued onto any essay ever written.</b></p>
+      </div>
+      <div class="compare-card strong" data-reveal="right">
+        <span class="compare-badge">✓ Strong evidence</span>
+        <p class="compare-quote">"During the Civil Rights Movement, organized protest showed that individual courage matters most when it's connected to collective action."</p>
+        <p class="compare-why">A real moment, a precise claim, and reasoning baked in. <b>It can only support one argument — yours.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- sample argument essay with commentary bubbles -->
+  <div class="wrap" style="margin-top:88px;">
+    <div class="sec-head" data-reveal style="margin-bottom:28px;">
+      <span class="kicker">Full example response</span>
+      <h2 style="font-size:clamp(26px,3.6vw,40px);">Built paragraph by paragraph</h2>
+      <p class="lead" style="margin-top:14px;font-size:18px;">Scroll to assemble a complete argument. A bubble explains why each paragraph earns its place.</p>
+    </div>
+    <div class="essay" data-essay>
+      <div class="essay-doc">
+        <span class="prompt-tab">PROMPT · Is it more important to prioritize individual freedom or collective responsibility?</span>
+        <div class="essay-seg" data-seg="thesis" style="--seg-bg:#e6ecf3; --an-c:var(--navy);">
+          <p><mark class="an">Individual freedom and collective responsibility are usually framed as enemies, but the healthiest societies treat them as partners: freedom is what makes responsibility a choice rather than an order, and responsibility is what keeps one person's freedom from becoming another's cage.</mark> The question isn't which to pick, but how to keep them in tension.</p>
+        </div>
+        <div class="essay-seg" data-seg="evidence" style="--seg-bg:#e4eef7; --an-c:#3a6ea5;">
+          <p>Consider the polio vaccine campaigns of the 1950s. Vaccination was, technically, an individual medical decision — yet it worked only because millions made the same choice at once, protecting infants too young to be vaccinated themselves. <mark class="an">Freedom and obligation weren't opposed; the free choice of individuals produced a collective shield no law could have manufactured as quickly.</mark></p>
+        </div>
+        <div class="essay-seg" data-seg="commentary" style="--seg-bg:var(--strong-bg); --an-c:var(--strong);">
+          <p>The counterexample is just as instructive. <mark class="an">When "freedom" is treated as freedom from any obligation at all — the driver who refuses a seatbelt law, the factory that refuses to limit what it dumps upstream — one person's liberty quietly spends down everyone else's.</mark> The freedom is real; it's simply being charged to someone else's account.</p>
+        </div>
+        <div class="essay-seg" data-seg="soph" style="--seg-bg:var(--amber-soft); --an-c:var(--amber);">
+          <p><mark class="an">So the more important value is the one a given moment is missing.</mark> A society drifting toward conformity needs its dissenters; a society fracturing into pure self-interest needs to be reminded it is a society at all. Prioritizing one permanently over the other is how both are eventually lost.</p>
+        </div>
+      </div>
+      <div class="essay-notes">
+        <div class="note" data-note="thesis" style="--nc:var(--navy);"><div class="note-k"><span class="swatch"></span> Defensible thesis</div><h4>Takes a real position</h4><p>Refuses the either/or and stakes a claim about <em>tension</em> — something a reader could push back on.</p></div>
+        <div class="note" data-note="evidence" style="--nc:#3a6ea5;"><div class="note-k"><span class="swatch"></span> Specific evidence</div><h4>A precise example</h4><p>Names a real campaign and a concrete mechanism — not "history shows us…"</p></div>
+        <div class="note" data-note="commentary" style="--nc:var(--strong);"><div class="note-k"><span class="swatch"></span> Counterargument</div><h4>Tests the claim</h4><p>Brings in the opposing case and explains it instead of ignoring it.</p></div>
+        <div class="note" data-note="soph" style="--nc:var(--amber);"><div class="note-k"><span class="swatch"></span> Bigger meaning</div><h4>Earns sophistication</h4><p>Resolves the tension with a genuine insight — the value you need depends on the moment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT KILLS YOUR SCORE
+     ============================================================ -->
+<section class="section-pad dark-sec" id="mistakes" data-screen-label="Common Mistakes">
+  <div class="wrap">
+    <div class="sec-head centered" data-reveal>
+      <span class="kicker centered">Read this twice</span>
+      <h2>What kills your score</h2>
+      <p class="lead">None of these are about talent. They're habits — and every single one is fixable once you can name it.</p>
+    </div>
+
+    <div class="score-tracker" data-reveal="fade" data-mistakes-tracker>
+      <span class="st-label">Score-killers spotted</span>
+      <span class="st-num">0</span>
+      <span class="st-meter"><span style="width:0%"></span></span>
+    </div>
+
+    <div class="mistakes">
+      <div class="mistake" data-reveal data-mistake>
+        <span class="mk-x">✕</span>
+        <div><h4>Summarizing instead of analyzing</h4><p>Retelling what the text says, not explaining how or why it works.</p><span class="fix"><b>Fix →</b> For every quote, answer "so what does this <em>do</em>?"</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake style="--d:80ms">
+        <span class="mk-x">✕</span>
+        <div><h4>Dropping quotes without explaining</h4><p>A quote sits there, orphaned, and you move on.</p><span class="fix"><b>Fix →</b> Quote, then spend two sentences on its effect.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake>
+        <span class="mk-x">✕</span>
+        <div><h4>Writing a vague thesis</h4><p>"There are many factors" tells the grader nothing.</p><span class="fix"><b>Fix →</b> Name your position and your reasoning in one line.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake style="--d:80ms">
+        <span class="mk-x">✕</span>
+        <div><h4>Listing rhetorical devices</h4><p>"The author uses ethos, pathos, and logos." A checklist isn't analysis.</p><span class="fix"><b>Fix →</b> Pick fewer choices and go deeper on each.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake>
+        <span class="mk-x">✕</span>
+        <div><h4>Using sources one by one</h4><p>"Source A says… Source B says…" — a book report, not synthesis.</p><span class="fix"><b>Fix →</b> Build paragraphs around ideas, pulling sources in.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake style="--d:80ms">
+        <span class="mk-x">✕</span>
+        <div><h4>Generic argument examples</h4><p>"Throughout history, people have…" supports nothing in particular.</p><span class="fix"><b>Fix →</b> Use one specific moment you can actually explain.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake>
+        <span class="mk-x">✕</span>
+        <div><h4>Ignoring the prompt</h4><p>Writing the essay you wanted instead of the one asked for.</p><span class="fix"><b>Fix →</b> Underline the prompt's verbs; answer those exactly.</span></div>
+      </div>
+      <div class="mistake" data-reveal data-mistake style="--d:80ms">
+        <span class="mk-x">✕</span>
+        <div><h4>Trying to sound fancy</h4><p>Burying a thin idea under thesaurus words.</p><span class="fix"><b>Fix →</b> Clear writing beats fancy writing every time.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PLANNING TEMPLATES
+     ============================================================ -->
+<section class="section-pad" id="templates" data-screen-label="Templates" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head centered" data-reveal>
+      <span class="kicker centered">Plan before you write</span>
+      <h2>Three templates, one per essay</h2>
+      <p class="lead">Five minutes filling one of these in beats fifteen minutes staring at a blank page. Copy the structure onto your scratch paper on exam day.</p>
+    </div>
+
+    <div class="templates">
+      <div class="template" data-reveal>
+        <div class="tpl-head"><span class="tpl-q">Q2</span><h3>Rhetorical Analysis</h3></div>
+        <div class="tpl-body">
+          <div class="tpl-field"><div class="tf-label">Speaker</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Audience</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Purpose</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Context</div><div class="tf-line"></div></div>
+          <div class="tpl-field tall"><div class="tf-label">Main rhetorical choices</div><div class="tf-line"></div><div class="tf-line tf-line2"></div></div>
+          <div class="tpl-field"><div class="tf-label">Thesis</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Body paragraph claims</div><div class="tf-line"></div></div>
+        </div>
+        <div class="tpl-foot"><span class="tpl-perf">⌁ choice → effect → purpose</span></div>
+      </div>
+
+      <div class="template" data-reveal style="--d:120ms">
+        <div class="tpl-head"><span class="tpl-q">Q1</span><h3>Synthesis</h3></div>
+        <div class="tpl-body">
+          <div class="tpl-field"><div class="tf-label">Prompt asks me to decide</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">My position</div><div class="tf-line"></div></div>
+          <div class="tpl-field tall"><div class="tf-label">Source groups (by idea)</div><div class="tf-line"></div><div class="tf-line tf-line2"></div></div>
+          <div class="tpl-field"><div class="tf-label">Best 3 sources</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Counterargument</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Thesis</div><div class="tf-line"></div></div>
+        </div>
+        <div class="tpl-foot"><span class="tpl-perf">⌁ group by idea, never by source</span></div>
+      </div>
+
+      <div class="template" data-reveal style="--d:240ms">
+        <div class="tpl-head"><span class="tpl-q">Q3</span><h3>Argument</h3></div>
+        <div class="tpl-body">
+          <div class="tpl-field"><div class="tf-label">Prompt issue</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">My claim</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Evidence 1</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Evidence 2</div><div class="tf-line"></div></div>
+          <div class="tpl-field"><div class="tf-label">Counterargument</div><div class="tf-line"></div></div>
+          <div class="tpl-field tall"><div class="tf-label">Bigger meaning</div><div class="tf-line"></div><div class="tf-line tf-line2"></div></div>
+        </div>
+        <div class="tpl-foot"><span class="tpl-perf">⌁ specific evidence beats clever phrasing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TIME MANAGEMENT
+     ============================================================ -->
+<section class="section-pad" id="time" data-screen-label="Time Management">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">Pacing</span>
+      <h2>Forty minutes is less than you think</h2>
+      <p class="lead">Every FRQ gets the same ~40 minutes of writing. What changes is how long you spend setting up. Switch essays to watch the split move.</p>
+    </div>
+
+    <div class="time-grid">
+      <div class="clock-wrap" data-reveal="scale">
+        <div class="clock" data-clock>
+          <svg viewBox="0 0 300 300">
+            <circle class="c-track" cx="150" cy="150" r="120"></circle>
+            <circle class="c-read"  cx="150" cy="150" r="120"></circle>
+            <circle class="c-write" cx="150" cy="150" r="120"></circle>
+          </svg>
+          <div class="c-face">
+            <div><div class="ct-total" data-clock-total>55</div><div class="ct-label">minutes total</div></div>
+          </div>
+        </div>
+        <div class="clock-legend">
+          <span><span class="ld" style="background:#b9cfe0"></span> <span data-read-label>Read &amp; plan</span></span>
+          <span><span class="ld" style="background:var(--amber)"></span> Write</span>
+        </div>
+      </div>
+
+      <div class="time-side" data-reveal="right">
+        <div class="time-tabs">
+          <button class="time-tab active" data-time-tab="synthesis">Synthesis</button>
+          <button class="time-tab" data-time-tab="rhetoric">Rhetorical</button>
+          <button class="time-tab" data-time-tab="argument">Argument</button>
+        </div>
+        <div class="time-detail" data-time-detail>
+          <!-- filled by JS -->
+        </div>
+        <div class="time-note">
+          You do <b>not</b> need a perfect essay. You need a clear, defensible, well-explained one — finished, with a real conclusion, before the proctor calls time.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL — SURVIVAL GUIDE
+     ============================================================ -->
+<section class="section-pad final-sec" id="final" data-screen-label="Survival Guide">
+  <div class="wrap">
+    <div class="sec-head centered" data-reveal>
+      <span class="kicker centered">The whole guide in seven lines</span>
+      <h2>Your AP Lang survival checklist</h2>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Answer the prompt directly — its verbs are your instructions.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Make a defensible thesis you could argue against.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Use specific evidence — names, moments, exact details.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Explain your reasoning. Don't make the grader guess.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Connect every paragraph back to your claim.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Choose complexity over oversimplification.</span>
+      </div>
+      <div class="check-item" data-check>
+        <span class="check-box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="ci-text">Let clear writing beat fancy writing — always.</span>
+      </div>
+    </div>
+
+    <div class="final-closer" data-reveal="fade">
+      <p class="fc-quote">AP Lang isn't about <span class="em">sounding smart.</span> It's about thinking clearly and proving your point.</p>
+      <p class="fc-sub">Now go crush it.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="brand"><span class="mark"><span>AP</span></span> <span>Lang Ultimate Guide</span></div>
+  <p>An interactive study resource for AP English Language &amp; Composition. AP is a registered trademark of the College Board, which was not involved in and does not endorse this student project.</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
